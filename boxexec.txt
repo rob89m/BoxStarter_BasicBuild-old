@@ -4,7 +4,7 @@ $Boxstarter.AutoLogin=$true
 $allowEmptyChecksums = $env:ChocolateyAllowEmptyChecksums
 $allowEmptyChecksumsSecure = $env:ChocolateyAllowEmptyChecksumsSecure
 
-MD ".\BoxStarterDownloads"
+MD "C:\Temp\BoxStarterDownloads"
 
 Update-ExecutionPolicy Unrestricted
 
@@ -26,18 +26,19 @@ choco upgrade vlc
 
 #Download Teamviewer 10
 $url = "http://download.teamviewer.com/download/version_10x/TeamViewer_Setup.exe"
-$output = ".\BoxStarterDownloads\TeamViewer_Setup.exe"
+$output = "C:\Temp\BoxStarterDownloads\TeamViewer_Setup.exe"
 $wc = New-Object System.Net.WebClient$wc.DownloadFile($url, $output)
 
-#Install Teamviewer 10.\BoxStarterDownloads\TeamViewer_Setup.exe /S
+#Install Teamviewer 10
+C:\Temp\BoxStarterDownloads\TeamViewer_Setup.exe /S
 
 
 #Download FreeDownloadManager5
 $url = "http://dn2.freedownloadmanager.org/5/5.1-latest/fdm5_x64_setup.exe"
-$output = ".\BoxStarterDownloads\fdm5_x64_setup.exe"
+$output = "C:\Temp\BoxStarterDownloads\fdm5_x64_setup.exe"
 $wc = New-Object System.Net.WebClient$wc.DownloadFile($url, $output)
 
 #Install FreeDownloadManager5
-.\BoxStarterDownloads\fdm5_x64_setup.exe /SP- /VERYSILENT /NORESTART
+C:\Temp\BoxStarterDownloads\fdm5_x64_setup.exe /SP- /VERYSILENT /NORESTART
 
 choco install boxstarter.windowsupdate
