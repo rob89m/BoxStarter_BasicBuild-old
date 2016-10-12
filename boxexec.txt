@@ -27,7 +27,8 @@ $url = "http://download.teamviewer.com/download/version_10x/TeamViewer_Setup.exe
 $output = ".\BoxStarterDownloads\TeamViewer_Setup.exe"
 $wc = New-Object System.Net.WebClient$wc.DownloadFile($url, $output)
 
-#Install Teamviewer 10.\BoxStarterDownloads\TeamViewer_Setup.exe /S
+#Install Teamviewer 10
+.\BoxStarterDownloads\TeamViewer_Setup.exe /S
 
 
 choco install boxstarter.windowsupdate
