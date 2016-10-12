@@ -1,6 +1,9 @@
 $Boxstarter.RebootOk=$true
 $Boxstarter.AutoLogin=$true
 
+$allowEmptyChecksums = $env:ChocolateyAllowEmptyChecksums
+$allowEmptyChecksumsSecure = $env:ChocolateyAllowEmptyChecksumsSecure
+
 MD ".\BoxStarterDownloads"
 
 Update-ExecutionPolicy Unrestricted
