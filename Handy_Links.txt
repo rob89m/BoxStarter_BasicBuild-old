@@ -1,0 +1,4 @@
+Links to articles that have proven useful in creating this project
+
+# Allow Empty Checksums
+https://github.com/mwrock/boxstarter/issues/198
