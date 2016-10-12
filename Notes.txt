@@ -1,0 +1,8 @@
+To run launch the following URL in:
+IE
+http://boxstarter.org/package/nr/url?https://gist.githubusercontent.com/rob89m/33b16944c457c90921b7b180cf33d5a6/raw/9547c85c8e9f4cba85ae7e8b9d28a2345f030167/boxstarterhomesetup.txt
+
+or
+
+CMD
+START http://boxstarter.org/package/nr/url?https://gist.githubusercontent.com/rob89m/33b16944c457c90921b7b180cf33d5a6/raw/9547c85c8e9f4cba85ae7e8b9d28a2345f030167/boxstarterhomesetup.txt

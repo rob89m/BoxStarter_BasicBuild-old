@@ -1,0 +1,1 @@
+@powershell -Command ".\process1.ps1"

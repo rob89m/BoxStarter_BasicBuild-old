@@ -1,0 +1,40 @@
+$Boxstarter.RebootOk=$true
+$Boxstarter.AutoLogin=$true
+
+MD ".\BoxStarterDownloads"
+
+Update-ExecutionPolicy Unrestricted
+
+Enable-RemoteDesktop
+
+
+choco upgrade 7zip.install
+choco upgrade ccleaner
+choco upgrade jre8
+choco upgrade notepadplusplus.install
+choco upgrade silverlight
+
+
+choco upgrade adobereader
+choco upgrade firefox
+choco upgrade plex-home-theater
+choco upgrade vlc
+
+
+#Download Teamviewer 10
+$url = "http://download.teamviewer.com/download/version_10x/TeamViewer_Setup.exe"
+$output = ".\BoxStarterDownloads\TeamViewer_Setup.exe"
+$wc = New-Object System.Net.WebClient$wc.DownloadFile($url, $output)
+
+#Install Teamviewer 10.\BoxStarterDownloads\TeamViewer_Setup.exe /S
+
+
+#Download FreeDownloadManager5
+$url = "http://dn2.freedownloadmanager.org/5/5.1-latest/fdm5_x64_setup.exe"
+$output = ".\BoxStarterDownloads\fdm5_x64_setup.exe"
+$wc = New-Object System.Net.WebClient$wc.DownloadFile($url, $output)
+
+#Install FreeDownloadManager5
+.\BoxStarterDownloads\fdm5_x64_setup.exe /SP- /VERYSILENT /NORESTART
+
+choco install boxstarter.windowsupdate

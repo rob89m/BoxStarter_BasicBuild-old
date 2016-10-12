@@ -1,0 +1,3 @@
+To Install run Install.bat (NOT as ADMIN)
+
+If nothing happens on scripts closes without action run Prep_Install.bat (AS ADMIN)
