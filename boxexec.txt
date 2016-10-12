@@ -4,7 +4,7 @@ $Boxstarter.AutoLogin=$true
 $allowEmptyChecksums = $env:ChocolateyAllowEmptyChecksums
 $allowEmptyChecksumsSecure = $env:ChocolateyAllowEmptyChecksumsSecure
 
-MD ".\BoxStarterDownloads"
+MD "C:\Temp\BoxStarterDownloads"
 
 Update-ExecutionPolicy Unrestricted
 
@@ -24,11 +24,11 @@ choco upgrade vlc
 
 #Download Teamviewer 10
 $url = "http://download.teamviewer.com/download/version_10x/TeamViewer_Setup.exe"
-$output = ".\BoxStarterDownloads\TeamViewer_Setup.exe"
+$output = "C:\Temp\BoxStarterDownloads\TeamViewer_Setup.exe"
 $wc = New-Object System.Net.WebClient$wc.DownloadFile($url, $output)
 
 #Install Teamviewer 10
-.\BoxStarterDownloads\TeamViewer_Setup.exe /S
+C:\Temp\BoxStarterDownloads\BoxStarterDownloads\TeamViewer_Setup.exe /S
 
 
 choco install boxstarter.windowsupdate
