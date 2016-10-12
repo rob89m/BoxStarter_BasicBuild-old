@@ -1,6 +1,6 @@
 MkDir("C:\Temp\BoxStarterDownload")
 
-$url = "https://github.com/rob89m/BoxStarter_BasicBuild/archive/master.zip"
+$url = "https://github.com/rob89m/BoxStarter_BasicBuild/archive/BoxStarter_HomeBuild.zip"
 $output = "C:\Temp\BoxStarterDownload\master.zip"
 $start_time = Get-Date
 
