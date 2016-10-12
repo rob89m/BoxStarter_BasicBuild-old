@@ -69,6 +69,8 @@ else
 # Run your code that needs to be elevated here
 Set-ExecutionPolicy Unrestricted -Force
 
+POWERCFG -change -standby-timeout-ac 0
+
 $ScriptPath = split-path $SCRIPT:MyInvocation.MyCommand.Path -parent
 MD C:\Temp
 Copy-Item $ScriptPath\* c:\Temp -Force
