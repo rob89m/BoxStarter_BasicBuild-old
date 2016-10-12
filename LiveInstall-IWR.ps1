@@ -10,4 +10,4 @@ foreach ($item in $zip.items()) {
 }
 
 
-C:\Temp\BoxStarter_BasicBuild-master\process1.ps1
+C:\Temp\BoxStarter_BasicBuild-BoxStarter_HomeBuild\process1.ps1
