@@ -1,6 +1,6 @@
 MkDir("C:\Temp\BoxStarterDownload")
 
-iwr -Uri https://github.com/rob89m/BoxStarter_BasicBuild/archive/master.zip -OutFile C:\Temp\BoxStarterDownload\master.zip
+iwr -Uri https://github.com/rob89m/BoxStarter_BasicBuild/archive/BoxStarter_HomeBuild.zip -OutFile C:\Temp\BoxStarterDownload\master.zip
 
 
 $shell = New-Object -ComObject shell.application
