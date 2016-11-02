@@ -25,7 +25,8 @@ choco upgrade vlc
 #Download Teamviewer 10
 $url = "http://download.teamviewer.com/download/version_10x/TeamViewer_Setup.exe"
 $output = "C:\Temp\BoxStarterDownloads\TeamViewer_Setup.exe"
-$wc = New-Object System.Net.WebClient$wc.DownloadFile($url, $output)
+$wc = New-Object System.Net.WebClient
+$wc.DownloadFile($url, $output)
 
 #Install Teamviewer 10
 C:\Temp\BoxStarterDownloads\BoxStarterDownloads\TeamViewer_Setup.exe /S
